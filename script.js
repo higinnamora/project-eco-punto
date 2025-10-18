@@ -26,10 +26,16 @@ function initMap() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const body = document.querySelector('body');
   const hamburgerMenu = document.querySelector('.hamburger-menu');
   const navLinks = document.querySelector('.nav-links');
+  const toggleA11y = document.querySelector('.toggle-a11y');
 
   hamburgerMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+  });
+
+  toggleA11y.addEventListener('click', () => {
+    body.classList.toggle('a11y-on');
   });
 });

@@ -1,5 +1,5 @@
 :root {
-  --primary-green: #2ecc71;
+  --primary-green: #1a7f5a;
   --dark-green: #065f46;
   --text-dark: #333;
   --text-light: #fff;
@@ -96,6 +96,7 @@ img {
   img {
     width: 34px;
   }
+  font-size: 24px;
 }
 .nav-links {
   display: flex;
@@ -822,7 +823,7 @@ img {
 }
 
 .points-summary h2 {
-  color: var(--dark-green);
+  color: var(--white);
 }
 .points-summary p {
   margin-bottom: 1rem;
@@ -884,7 +885,7 @@ img {
 }
 .badge.blue {
   background-color: #e6f3fb;
-  color: #3498db;
+  color: #2d60c3;
 }
 .badge.purple {
   background-color: #f4eefc;
@@ -1182,4 +1183,90 @@ img {
 .submit-button a {
   color: white;
   font-weight: bold;
+}
+.label-hidden {
+  visibility: hidden;
+}
+
+/* Accesibilidad */
+/* body.a11y-on {} */
+
+body.a11y-on .toggle-a11y {
+  background-color: #26848e;
+}
+
+body.a11y-on .hero-section {
+  color: #000;
+  background: linear-gradient(
+      rgba(202, 202, 202, 0.7),
+      rgba(202, 202, 202, 0.7)
+    ),
+    url('./images/hero.jpg') no-repeat center center/cover;
+}
+body.a11y-on .hero-guia {
+  color: #000;
+  background: linear-gradient(
+      rgba(202, 202, 202, 0.7),
+      rgba(202, 202, 202, 0.7)
+    ),
+    url('./images/header-guia.jpg') no-repeat center center/cover;
+}
+body.a11y-on .hero-map {
+  color: #000;
+  background: linear-gradient(
+      rgba(202, 202, 202, 0.7),
+      rgba(202, 202, 202, 0.7)
+    ),
+    url('./images/hero-map.jpg') no-repeat center center/cover;
+}
+body.a11y-on .features,
+.text-white {
+  color: #000000;
+}
+body.a11y-on .signup-form input:focus,
+.signup-form .login-button,
+.signup-form .login-button:hover,
+.signup-form a.login-button {
+  color: #ffffff !important;
+}
+body.a11y-on .signup-form .login-button {
+  border: none !important;
+  text-decoration: none !important;
+}
+body.a11y-on .title-principal {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: linear-gradient(90deg, #1faa59, #2d60c3);
+  color: #2d60c3;
+  padding: 20px;
+}
+body.a11y-on .features h1,
+.features h2,
+.features > h1,
+.features > h2 {
+  color: #000000 !important;
+}
+body.a11y-on .impact-section {
+  color: #000;
+}
+body.a11y-on .progress-text .percentage {
+  color: #000000;
+}
+body.a11y-on .progress-circle {
+  background: radial-gradient(
+      closest-side,
+      var(--gradient-mid) 84%,
+      transparent 85%
+    ),
+    conic-gradient(#201e1e var(--progress-value), #ffffff40 0);
+}
+body.a11y-on .yellow h4 {
+  color: #9c640c;
+}
+body.a11y-on .blue h4 {
+  color: #2d60c3;
+}
+body.a11y-on .style-eye {
+  font-size: 20px;
 }
