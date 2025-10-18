@@ -98,6 +98,7 @@ a {
   margin: 0;
   padding: 0;
   gap: 35px;
+  align-items: center;
 }
 
 .nav-links a {
@@ -128,7 +129,7 @@ a {
   color: white;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./images/hero.png') no-repeat center center/cover;
+    url('./images/hero.jpg') no-repeat center center/cover;
   margin-bottom: 4rem;
 }
 .hero-content {
@@ -493,7 +494,7 @@ a {
   color: white;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./images/header-guia.png') no-repeat center center/cover;
+    url('./images/header-guia.jpg') no-repeat center center/cover;
   margin: 80px 0 0 0;
 }
 .info-guia {
@@ -533,7 +534,7 @@ a {
   color: white;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./images/hero-map.png') no-repeat center center/cover;
+    url('./images/hero-map.jpg') no-repeat center center/cover;
   margin: 80px 0 0 0;
 }
 .maps-section {
@@ -1032,4 +1033,55 @@ a {
 }
 .text-white {
   color: white;
+}
+
+/* Estilos para el botón de hamburguesa */
+.hamburger-menu {
+  display: none; /* Oculto en pantallas grandes */
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(35, 109, 79);
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    background-color: #eeeeeefc;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+  }
+  .nav-links li {
+    padding: 4px;
+  }
+
+  .nav-links.active {
+    display: block;
+    padding: 20px;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+  }
+}
+.submit-button a {
+  color: white;
+  font-weight: bold;
 }
