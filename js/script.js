@@ -39,3 +39,32 @@ document.addEventListener('DOMContentLoaded', () => {
     body.classList.toggle('a11y-on');
   });
 });
+
+// BOTON HACIA ARRIBA
+let btnVolverArriba = document.getElementById('btnVolverArriba');
+
+window.onscroll = function () {
+  controlarVisibilidadBoton();
+};
+
+function controlarVisibilidadBoton() {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
+    btnVolverArriba.style.display = 'block';
+  } else {
+    btnVolverArriba.style.display = 'none';
+  }
+}
+
+btnVolverArriba.addEventListener('click', function () {
+  volverArribaSuavemente();
+});
+
+function volverArribaSuavemente() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
