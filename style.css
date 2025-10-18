@@ -762,6 +762,12 @@ img {
   display: flex;
   gap: 1.5rem;
   align-items: stretch;
+  padding: 8px;
+}
+@media (min-width: 768px) {
+  .main-header {
+    padding: 0;
+  }
 }
 
 .user-profile {
@@ -773,6 +779,12 @@ img {
   background-color: var(--primary-green);
   color: var(--white);
   margin-top: 1rem;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .user-profile {
+    flex-direction: row;
+  }
 }
 
 .avatar {
@@ -833,9 +845,18 @@ img {
 
 .stats-overview {
   grid-area: stats;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+}
+
+@media (min-width: 768px) {
+  .stats-overview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0;
+  }
 }
 
 .stat-card {
@@ -875,6 +896,13 @@ img {
   display: flex;
   gap: 1.5rem;
   align-items: flex-start;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+  }
 }
 
 .left-column {
@@ -978,10 +1006,18 @@ img {
 }
 .monthly-progress .progress-details {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 2rem;
   margin-bottom: 2rem;
 }
+
+@media (min-width: 768px) {
+  .monthly-progress .progress-details {
+    flex-direction: row;
+  }
+}
+
 .circular-progress {
   width: 150px;
   height: 150px;
