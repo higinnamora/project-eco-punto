@@ -135,7 +135,7 @@ img {
   color: white;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./images/hero.jpg') no-repeat center center/cover;
+    url('../images/hero.jpg') no-repeat center center/cover;
   margin-bottom: 4rem;
 }
 .hero-content {
@@ -541,7 +541,7 @@ img {
   color: white;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./images/header-guia.jpg') no-repeat center center/cover;
+    url('../images/header-guia.jpg') no-repeat center center/cover;
   margin: 80px 0 0 0;
 }
 .info-guia {
@@ -597,7 +597,7 @@ img {
   color: white;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('./images/hero-map.jpg') no-repeat center center/cover;
+    url('../images/hero-map.jpg') no-repeat center center/cover;
   margin: 80px 0 0 0;
 }
 .maps-section {
@@ -1201,7 +1201,7 @@ body.a11y-on .hero-section {
       rgba(202, 202, 202, 0.7),
       rgba(202, 202, 202, 0.7)
     ),
-    url('./images/hero.jpg') no-repeat center center/cover;
+    url('../images/hero.jpg') no-repeat center center/cover;
 }
 body.a11y-on .hero-guia {
   color: #000;
@@ -1209,7 +1209,7 @@ body.a11y-on .hero-guia {
       rgba(202, 202, 202, 0.7),
       rgba(202, 202, 202, 0.7)
     ),
-    url('./images/header-guia.jpg') no-repeat center center/cover;
+    url('../images/header-guia.jpg') no-repeat center center/cover;
 }
 body.a11y-on .hero-map {
   color: #000;
@@ -1217,7 +1217,7 @@ body.a11y-on .hero-map {
       rgba(202, 202, 202, 0.7),
       rgba(202, 202, 202, 0.7)
     ),
-    url('./images/hero-map.jpg') no-repeat center center/cover;
+    url('../images/hero-map.jpg') no-repeat center center/cover;
 }
 body.a11y-on .features,
 .text-white {

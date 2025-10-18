@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,17 +12,17 @@
     />
     <link
       rel="shortcut icon"
-      href="./images/logo-ecopunto.png"
+      href="../images/logo-ecopunto.png"
       type="image/x-icon"
     />
-    <title>Guía de reciclaje</title>
+    <title>Mapa de reciclaje</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="index.html" class="logo">
+        <a href="../index.html" class="logo">
           <img
-            src="./images/logo-ecopunto.png"
+            src="../images/logo-ecopunto.png"
             alt="Logo EcoPunto"
           />EcoPunto</a
         >
@@ -32,10 +32,10 @@
           <span></span>
         </button>
         <ul class="nav-links">
-          <li><a href="index.html">Nosotros</a></li>
-          <li><a href="index.html">Impacto</a></li>
+          <li><a href="../index.html">Nosotros</a></li>
+          <li><a href="../index.html">Impacto</a></li>
           <li><a href="./guia.html">Guía</a></li>
-          <li><a href="./mapa.html">Mapa</a></li>
+          <li><a href="#mapa">Mapa</a></li>
           <a href="./register.html"
             ><button class="cta-button">Únete Ahora</button></a
           >
@@ -43,62 +43,59 @@
         </ul>
       </nav>
     </header>
-    <section class="hero-guia">
+    <section class="hero-map">
       <div class="hero-content">
-        <h1>Guía de reciclaje</h1>
-        <p>💚 Separar es amar, cuida el planeta, clasifica tus residuos 💚</p>
+        <h1>Mapa de reciclaje</h1>
+        <p>
+          💚 Cada punto en el mapa es una oportunidad para cuidar el planeta 💚
+        </p>
         <p>⬇️ ⬇️ ⬇️</p>
       </div>
     </section>
-    <section class="guia">
+    <section id="mapa" class="guia">
       <div class="container">
-        <h2 class="title-principal">¿Cómo reciclar?</h2>
+        <h2 class="title-principal">¿En dónde reciclar?</h2>
         <p class="text-center">
-          Haz que cada desecho cuente. ¡Recicla con conciencia!
+          Reciclar es sencillo cuando sabes dónde hacerlo. ¡Ubica tu punto y
+          actúa!
         </p>
-        <div class="info-guia green-guia">
-          <img class="info-img" src="./images/green.png" alt="" />
-          <ul>
-            <strong>🟢 CANECA VERDE 🟢</strong>
-            <li>Desechos orgánicos</li>
-            <li>Empaques de plástico</li>
-            <li>Vasos de café</li>
-            <li>Bolsas aromáticas o té</li>
-            <li>Vinipel</li>
-          </ul>
-        </div>
-        <div class="info-guia">
-          <img class="info-img" src="./images/gray.png" alt="" />
-          <ul>
-            <strong>⚪ CANECA GRIS ⚪</strong>
-            <li>Periódico</li>
-            <li>Revistas</li>
-            <li>Sobres</li>
-            <li>Cajas de zapatos</li>
-            <li>Hojas de papel</li>
-          </ul>
-        </div>
-        <div class="info-guia blue-guia">
-          <img class="info-img" src="./images/blue.png" alt="" />
-          <ul>
-            <strong>🔵 CANECA AZUL 🔵</strong>
-            <li>Envases plásticos</li>
-            <li>Botellas de vidrio</li>
-            <li>Bolsas de leche</li>
-            <li>Cubiertos plásticos</li>
-            <li>Envases de vidrio</li>
-          </ul>
-        </div>
-        <div class="info-guia red-guia">
-          <img class="info-img" src="./images/red.png" alt="" />
-          <ul>
-            <strong>🔴 CANECA ROJA 🔴</strong>
-            <li>Residuos peligrosos</li>
-            <li>Guantes</li>
-            <li>Jeringas</li>
-            <li>Gasas y sangre</li>
-            <li>Residuos químicos</li>
-          </ul>
+      </div>
+    </section>
+    <section class="maps-section">
+      <div class="container">
+        <div id="map"></div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="container">
+        <h2 class="title-principal text-center" style="color: white">
+          ¿Por qué elegir EcoPunto?
+        </h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🗺️</div>
+            <h3>Mapa Interactivo</h3>
+            <p>
+              Encuentra fácilmente los puntos de reciclaje más cercanos a tu
+              ubicación con nuestro mapa visual e intuitivo.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">♻️</div>
+            <h3>Múltiples Materiales</h3>
+            <p>
+              Recicla plástico, vidrio, papel, metales, electrónicos y más. Cada
+              punto está especializado en diferentes tipos de residuos.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌱</div>
+            <h3>Impacto Ambiental</h3>
+            <p>
+              Contribuye activamente a la preservación del medio ambiente y
+              ayuda a construir un futuro más sostenible.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -107,7 +104,7 @@
         <div class="footer-brand">
           <a href="index.html" class="logo">
             <img
-              src="./images/logo-ecopunto.png"
+              src="../images/logo-ecopunto.png"
               alt="Logo EcoPunto"
             />EcoPunto</a
           >
@@ -135,10 +132,10 @@
         <div class="footer-links">
           <h4>Empresa</h4>
           <ul>
-            <li><a href="/index.html">Nosotros</a></li>
+            <li><a href="#about">Nosotros</a></li>
             <li><a href="#impact">Impacto</a></li>
-            <li><a href="#aliados">Aliados</a></li>
-            <li><a href="#carrera">Carreras</a></li>
+            <li><a href="#">Aliados</a></li>
+            <li><a href="#">Carreras</a></li>
           </ul>
         </div>
 
@@ -158,6 +155,11 @@
         </p>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU0ae9iaILstl0baYn1Iptx2_xSYXeSzg&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
